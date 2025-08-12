@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mensagem de Saudação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333333;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555555;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Oi, <span th:text="${name}">Pessoa</span>!</h1>
+    <p>Seja bem-vindo(a) ao nosso sistema.</p>
+</div>
+</body>
+</html>
